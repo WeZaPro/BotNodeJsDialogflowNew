@@ -256,7 +256,7 @@ app.post("/webhook", (req, res) => {
       .get();
     // find not found
     if (_getSessionId._fieldsProto == undefined) {
-      agent.add("--------No DB");
+      //agent.add("--------No DB");
       // agent.add("--------Save DB");
       // const usersDb = db.collection("users");
       // const sessionID = usersDb.doc(_inputSessionId);
@@ -264,7 +264,7 @@ app.post("/webhook", (req, res) => {
       //   sessionID: _inputSessionId,
       // });
 
-      agent.add("--------Goto Start");
+      //agent.add("--------Goto Start");
       agent.add(payload);
     } else {
       // find  found
